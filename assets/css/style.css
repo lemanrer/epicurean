@@ -1,0 +1,75 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: baseline;
+  padding: 18px 0px;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+.header .nav-links {
+  display: flex;
+  gap: 38px;
+  list-style-type: none;
+}
+.header .nav-links a {
+  text-decoration: none;
+  color: #270A05;
+}
+.header .nav-links i {
+  font-size: 11px;
+}
+.header .header-icons {
+  display: flex;
+  gap: 25px;
+}
+.header .header-icons i {
+  font-size: 25px;
+}
+
+.welcome {
+  background-image: url("/assets/image/coffee-hero-bg-sp.png");
+  height: 700px;
+  padding-top: 100px;
+}
+.welcome .mySlides {
+  display: none;
+}
+.welcome .w3-badge {
+  height: 13px;
+  width: 13px;
+  padding: 0;
+}
+.welcome span {
+  color: var(--text-heading-black);
+  font-weight: 700;
+}
+.welcome p {
+  color: rgba(39, 10, 5, 0.6);
+}
+.welcome h1 {
+  font-family: "Bakilda Histori", sans-serif;
+  font-size: 100px;
+  color: #270A05;
+}
+.welcome h2 {
+  font-family: "Bakilda Histori", sans-serif;
+  font-size: 44px;
+  color: #270A05;
+}
+.welcome button {
+  background-color: #86371C;
+  color: white;
+  padding: 14px 30px;
+  font-weight: 500px;
+  line-height: 1;
+  border-radius: 8px;
+  border: none;
+}/*# sourceMappingURL=style.css.map */
