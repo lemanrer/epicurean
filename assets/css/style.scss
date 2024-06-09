@@ -2,6 +2,21 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    .btn {
+        position: relative;
+        display: inline-block;
+        margin: 15px;
+        padding: 14px 30px;
+        text-align: center;
+        text-decoration: none;
+        color: #86371C;
+        background: transparent;
+        border: 1px solid #86371C;
+        border-radius: 8px;
+        a{
+            text-decoration: none;
+        }
+      }
 }
 .header{
     display:flex ;
@@ -165,11 +180,86 @@
       }
 
 }
-.about{
+.about-section{
     background-color: #EFECE7;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    .about{
+        padding-top:120px ;
+        padding-bottom: 120px;
+    }
     img{
         border-radius: 10px;
         width: 411px;
         height: 427.78px;
     }
+    h2{
+        color: #86371C;
+        font-family: 'Bakilda Histori', sans-serif;
+        font-size: 44px;
+    }
+    span{
+        color: #86371C;
+    }
+    p{
+        color: rgba(39, 10, 5, 0.6);
+    }
+    .equipments{
+        display: flex;
+        gap: 60px;
+        h2{
+            font-size: 24px;
+            color: #270A05;
+        }
+        p{
+            width: 187.28px;
+        }
+        .coffee-shop{
+            display: flex;
+        }
+        .coffee-machine{
+            display: flex;
+        }
+        .about-icon{
+            font-size: 40px;
+            color: #86371C;
+        }
+    }
+    
+}
+.achievements{
+    color: #86371C;
+    margin-bottom: 100px;
+    h2{
+        font-family: 'Bakilda Histori', sans-serif;
+        font-size: 44px;
+    }
+    p{
+        color: rgba(39, 10, 5, 0.6);
+    }
+    img{
+        padding-left: 150px;
+        border-radius: 16px;
+    }
+    .info-boxs{
+        display: flex;
+        .info-box{
+            border: 1.5px solid rgba(39, 10, 5, 0.1);
+            border-radius: 10px;
+            width: 164px;
+            height: 160.8px;
+            text-align: center;
+            color: #270A05;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 150%;
+            margin-top: 8px;
+            font-family: "abril-fatface", serif;
+            font-weight: 400;
+            font-style: italic;
+            
+    
+        }
+    }
+    
 }
