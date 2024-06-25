@@ -133,7 +133,11 @@
   height: 100%;
 }
 .coffee-product-area .swiper-wrapper {
-  display: flex;
+ 
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc(33.3333333333% -px);
+  overflow: hidden;
 }
 .coffee-product-area .movement-icons {
   display: flex;
@@ -237,6 +241,7 @@
 }
 .achievements .info-boxs {
   display: flex;
+  gap: 20px;
 }
 .achievements .info-boxs .info-box {
   border: 1.5px solid rgba(39, 10, 5, 0.1);
@@ -249,7 +254,384 @@
   font-weight: 600;
   line-height: 150%;
   margin-top: 8px;
-  font-family: "abril-fatface", serif;
+  font-family: serif;
   font-weight: 400;
-  font-style: italic;
-}/*# sourceMappingURL=style.css.map */
+}
+.achievements .info-boxs .info-box p {
+  color: #270A05;
+  font-weight: 700;
+}
+
+.menu {
+  text-align: center;
+}
+.menu span {
+  color: #86371C;
+}
+.menu h2 {
+  color: #86371C;
+  font-family: "Bakilda Histori", sans-serif;
+  font-size: 44px;
+}
+.menu .menu-boxes {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+.menu .menu-boxes .menu-box {
+  border: 1px solid #EBECF1;
+  border-radius: 18px;
+  padding: 25px;
+  margin-top: 20px;
+  display: flex;
+  width: 630px;
+  height: 156px;
+}
+.menu .menu-boxes .menu-box h2 {
+  color: #270A05;
+  font-size: 20px;
+  font-weight: 700px;
+}
+.menu .menu-boxes .menu-box p {
+  color: rgba(39, 10, 5, 0.7);
+}
+.menu .menu-boxes .menu-box .menu-price h2 {
+  color: #86371C;
+  font-family: "Bakilda Histori", sans-serif;
+  font-size: 44px;
+}
+.menu .menu-boxes .btn {
+  padding-top: 60px;
+}
+
+.team {
+  background-image: url(/assets/image/coff-team-bg-sp.png), linear-gradient(#270a05 100%, #270a05 100%);
+  text-align: center;
+}
+.team .team-head {
+  color: #fff;
+  padding-top: 120px;
+}
+.team .team-head h2 {
+  font-family: "Bakilda Histori", sans-serif;
+  font-size: 44px;
+}
+.team .team-boxes {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 120px;
+}
+.team .team-boxes .team-box .team-img {
+  background-color: #EFECE7;
+  border-radius: 20px;
+}
+.team .team-boxes .team-box h2 {
+  font-family: "abril-fatface", serif;
+  color: #fff;
+  font-size: 24px;
+}
+.comments .comments-header{
+  margin-top: 100px;
+}
+.comments .comments-header span{
+    color: #86371C;
+    font-weight: 400;
+}
+.comments .comments-header  h2{
+  color: #86371C;
+  font-size: 44px;
+  font-family: "Bakilda Histori", sans-serif;
+  margin-bottom: 60px;
+}
+.comments .movement-icons{
+  display: flex;
+  font-size: 50px;
+  gap: 25px;
+  padding-left: 450px;
+  color: #86371C;;
+}
+.comments .swipper-button-prev{
+  width: 40px;
+  height: 40px;
+  width: 50%;
+  border: 1px dotted #86371C;
+}
+.comments .comment_swiper{
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1
+}
+.comments .commnets-swiper-wrapper{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  transition-property: transform;
+  box-sizing: content-box;
+}
+.comments .comment-boxs {
+  display: flex;
+  gap: 30px;
+}
+.comments .comment-boxs .comment-title {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid rgba(221, 221, 221, 0.2784313725);
+  border-radius: 14px;
+  padding: 40px;
+  width: 636px;
+  height: 233.31px;
+}
+.comments .comment-boxs .comment-title h2 {
+  font-family: serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: #270A05;
+}
+.comments .comment-info{
+  display: flex;
+  gap: 10px;
+  padding-top: 10px;
+}
+.comment-profile{
+  margin-top: 10px;
+}
+.comment-profile .comment-icons {
+  color: #ffc107;
+}
+.blog {
+  background-image: url(/assets/image/reservation-bg.png);
+  margin-bottom: 100px;
+}
+.blog .blog-title {
+  margin: 90px 0px;
+}
+.blog .blog-title span {
+  color: #86371C;
+}
+.blog .blog-title h2 {
+  font-size: 44px;
+  color: #86371C;
+  font-family: "Bakilda Histori", sans-serif;
+}
+.blog .blog-title p {
+  color: rgba(39, 10, 5, 0.6);
+}
+.blog .blog-title ul {
+  list-style: none;
+  padding: 0;
+}
+.blog .blog-title ul span {
+  color: rgba(39, 10, 5, 0.7);
+}
+.blog .form {
+  background-color: rgba(134, 55, 28, 0.6);
+  border-radius: 14px;
+  padding: 30px;
+  margin: 90px 0px;
+}
+.blog .form .blog-title-left-side {
+  display: flex;
+  flex-direction: column;
+}
+.blog .form .blog-title-left-side input {
+  background-color: rgba(39, 10, 5, 0.6);
+  padding: 12px 25px;
+  border-radius: 6px;
+  margin-right: 12px;
+  margin-bottom: 12px;
+}
+.blog .form .blog-title-right-side {
+  display: flex;
+  flex-direction: column;
+}
+.blog .form .blog-title-right-side input {
+  background-color: rgba(39, 10, 5, 0.6);
+  padding: 12px 25px;
+  border-radius: 6px;
+  margin-left: 12px;
+  margin-bottom: 12px;
+}
+.blog .form button {
+  border-style: none;
+  padding: 14px 30px;
+  background-color: #270A05;
+  border-radius: 8px;
+  width: 100%;
+}
+.blog .form button span {
+  color: #fff;
+  font-weight: 500;
+}
+
+.news {
+  text-align: center;
+  margin-bottom: 120px;
+}
+.news span {
+  color: #86371C;
+}
+.news h2 {
+  font-size: 44px;
+  color: #86371C;
+  font-family: "Bakilda Histori", sans-serif;
+}
+.news .news-boxs {
+  display: flex;
+  gap: 20px;
+}
+.news .news-boxs .news-box .news-box-img {
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+.news .news-boxs .news-box .news-box-img img {
+  vertical-align: middle;
+  border-radius: 15px;
+}
+.news .news-boxs .news-box .news-box-img a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  border-radius: 7px;
+  top: 20px;
+  left: 20px;
+  line-height: 0;
+  padding: 22px 21px;
+  background: rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+}
+.news .news-boxs .news-box h2 {
+  font-family: serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #270A05;
+}
+.news .news-boxs .news-box .news-info ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 14px 0;
+  list-style-type: none;
+  padding-left: 0;
+}
+.news .news-boxs .news-box .news-info ul li {
+  font-size: 14px;
+}
+.news .news-boxs .news-box .news-info ul li span {
+  color: rgba(39, 10, 5, 0.7);
+  padding-left: 5px;
+}
+.news .news-boxs .news-box .news-info h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #270A05;
+  text-align: left;
+  letter-spacing: 0.24px;
+  font-family: serif;
+}
+.news .btn {
+  margin-top: 60px;
+}
+
+.footer {
+  background-image: url(/assets/image/footer-bg.png);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.footer .footer-box h2 {
+  color: #fff;
+  margin-bottom: 8px;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.24px;
+  font-family: serif;
+}
+.footer .footer-box .footer-list {
+  display: flex;
+  flex-direction: column;
+}
+.footer .footer-box .footer-list ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.footer .footer-box .footer-list ul li {
+  margin-bottom: 10px;
+}
+.footer .footer-box .footer-list ul li a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+.footer .footer-subscribe {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  height:304.67px;
+  margin-bottom: 20px;
+}
+.footer .footer-subscribe .footer-subscribe-title {
+  background-image: url(/assets/image/footer-subscribe-bg.png);
+  position: absolute;
+  color: #fff;
+  width: 476px;
+  height: 180.67px;
+  padding-top: 5px;
+  padding-left: 10px;
+
+}
+.footer .footer-subscribe .footer-subscribe-title h2 {
+  font-family: "Bakilda Histori", sans-serif;
+  font-size: 44px;
+  line-height: 1.3;
+}
+.footer .footer-subscribe .footer-form {
+  height: 50px;
+  display: flex;
+  gap: 10px;
+  padding-top: 200px;
+}
+.footer .footer-subscribe .footer-form input{
+  border-radius: 6px;
+  width: 321px;
+  height: 50px;
+  border: none;
+  padding-left: 10px;
+}
+.footer .footer-subscribe .footer-form button{
+  height: 50px;
+  width: 130px;
+  border-radius: 6px;
+  background-color: #86371C;
+  border: none;
+}
+.footer .footer-subscribe .footer-form button span{
+  color: #fff;
+}
+.footer .second-footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.footer .second-footer .second-footer-list ul{
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+}
+.footer .second-footer .second-footer-list ul a{
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+.footer .second-footer .second-footer-logos{
+  display: flex;
+  gap: 10px;
+}
+.footer .second-footer .second-footer-logos i{
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */
